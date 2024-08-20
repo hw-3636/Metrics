@@ -2,7 +2,7 @@ import pandas as pd
 import sqlite3
 
 # CSV 파일 읽기
-csv_file = './data/daily_top10_articles.csv'
+csv_file = './data/daily_top10_articles_kyunghyang.csv'
 df = pd.read_csv(csv_file)
 
 # 날짜 형식 변환 (CSV 파일의 날짜 형식에 맞게 조정 필요)
@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS article(
     reporter_name TEXT,
     creation_time TIME,
     news_content CHAR,
-    article_section TEXT,
+    article_section TEXT
 )
 '''
 

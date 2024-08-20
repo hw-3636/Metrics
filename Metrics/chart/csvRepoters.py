@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS reporters(
     reporters_reporter_name TEXT,
     reporters_creation_time TIME,
     reporters_title TEXT,
-    reporters_news_content CHAR,
+    reporters_news_content CHAR
     
 )
 '''
