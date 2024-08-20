@@ -14,7 +14,7 @@ conn = sqlite3.connect('./../crawling.sqlite3')
 # 데이터베이스에 테이블 생성 (테이블이 이미 존재한다면 이 부분은 생략해도 됩니다)
 cursor = conn.cursor()
 sql = '''
-CREATE TABLE IF NOT EXISTS article(
+CREATE TABLE IF NOT EXISTS reporters(
     reportersCd INTEGER PRIMARY KEY AUTOINCREMENT,
     reporters_news_organization TEXT,
     reporters_reporter_name TEXT,
